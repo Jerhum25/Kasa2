@@ -1,0 +1,30 @@
+.container {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px;
+  div {
+    font-size: 18px;
+    margin: 5px;
+    text-align: right;
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    div{
+      font-size: 14px;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

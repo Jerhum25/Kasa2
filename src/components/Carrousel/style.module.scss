@@ -1,0 +1,49 @@
+.container {
+  max-width: 1240px;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  margin: auto;
+  .photoLogement{
+    max-width: 100%;
+    min-height: 415px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    width: 25px;
+    height: 45px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .arrowRight {
+    right: 0;
+  }
+  .arrowLeft {
+    left: 0;
+  }
+  .counter{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    height: 255px;
+    .counter{
+      display: none;
+    }
+  }
+}

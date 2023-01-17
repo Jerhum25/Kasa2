@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  .title{
+    background-color: #ff6060;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
+}
